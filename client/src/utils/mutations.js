@@ -38,7 +38,7 @@ export const ADD_USER = gql`
     }
 `;
 
-// include book details
+// include book details from book.js model
 export const SAVE_BOOK = gql`
     mutation saveBook($book: SavedBookInput!) {
         saveBook(book: $book) {
