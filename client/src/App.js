@@ -18,13 +18,6 @@ const httpLink = createHttpLink({
 });
 
 
-// Mini Project
-const client = new ApolloClient({
-  uri: '/graphql',
-  cache: new InMemoryCache(),
-});
-
-
 // Ref: 21-01-25
 const authLink = setContext((_, { headers }) => {
   // get the authentication token from local storage if it exists
@@ -38,6 +31,12 @@ const authLink = setContext((_, { headers }) => {
   };
 });
 
+
+// Mini Project
+const client = new ApolloClient({
+  uri: '/graphql',
+  cache: new InMemoryCache(),
+});
 
 
 
