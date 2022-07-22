@@ -3,7 +3,7 @@ import { Jumbotron, Container, CardColumns, Card, Button } from 'react-bootstrap
 
 import { getMe, deleteBook } from '../utils/API';
 import Auth from '../utils/auth';
-import { removeBookId } from '../utils/localStorage';
+import { getSavedBookIds, removeBookId } from '../utils/localStorage';
 
 // Ref: mini project pages
 import { useMutation, useQueries } from '@apollo/client';
