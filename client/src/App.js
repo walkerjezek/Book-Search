@@ -11,6 +11,7 @@ import SearchBooks from './pages/SearchBooks';
 import SavedBooks from './pages/SavedBooks';
 import Navbar from './components/Navbar';
 
+// Stupid ApolloProvider....
 
 // Ref: 21-01-25
 const httpLink = createHttpLink({
@@ -40,6 +41,8 @@ const client = new ApolloClient({
 
 
 
+
+// miniproject... Forgot to use apolloprovider here. Now it's working... I'm an idiot
 function App() {
   return (
     <ApolloProvider client={client}>

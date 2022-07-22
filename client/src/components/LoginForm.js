@@ -32,6 +32,12 @@ const LoginForm = () => {
       event.stopPropagation();
     }
 
+
+    // try {
+    //   const { data } = await removeSkill({
+    //     variables: { skill },
+    //   });
+
     try {
       const { data } = await loginUser({
         variables: {...userFormData}
