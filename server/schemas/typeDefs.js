@@ -43,7 +43,6 @@ const typeDefs = gql`
         link: String
         title: String
     }
-
 `;
 
 module.exports = typeDefs;
